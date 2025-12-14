@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(to left top, #4a324b, #314152);
+    color: #cfcfcf;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    max-height: 60%;
+    width: 380px;
+    border-radius: 20px;
+    border: 1px solid #cfcfcf;
+    background: rgba(180, 180, 180, 0.226);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    flex-shrink: none;
+}   
+
+.inputSection{
+    display: flex;
+    /* width: 90%; */
+
+}
+.inputSection input{
+    width: auto;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: linear-gradient(to top left, #2c163557, #0f333a67);
+    color: #cfcfcf;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.inputSection button{
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #314152;
+    color: #cfcfcf;
+    transition: background-color 0.3s ease;
+}
+
+.container .todoList{
+    width: 90%;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.todoList::-webkit-scrollbar{
+    display:none;
+}
+
+.todoList li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px solid #cfcfcf; */
+    background-color: #3141525b;
+}
+
+.todoList li:hover{
+    background-color: rgba(59, 59, 59, 0.534);
+}
+
+li .todoName{
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.deleteBtn{
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #ff4c4c2c;
+    color: #cfcfcf;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover{
+    background-color: #ff4c4c7a;
+}
