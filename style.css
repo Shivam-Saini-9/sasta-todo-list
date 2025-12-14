@@ -53,7 +53,7 @@ main{
     border: none;
     outline: none;
     font-size: 16px;
-    background: linear-gradient(to top left, #2c163557, #0f333a67);
+    background: linear-gradient(to top left, #3e1e4bbb, #123e47be);
     color: #cfcfcf;
     /* font-family: "Poppins", sans-serif; */
 }
